@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{779B27A2-4AAA-475C-8959-ABF67AA55058}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOStst/UI/FrontPage/FontPageController.cs">
+    <Files>
+      <File FileName="iOStst/AppDelegate.cs" Line="30" Column="10" />
+      <File FileName="iOStst/UI/FrontPage/FontPageController.cs" Line="16" Column="58" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.App.iOS.iOStst PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.c2a8487fccc07cb2f4373b464a6646d391cc1725" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
