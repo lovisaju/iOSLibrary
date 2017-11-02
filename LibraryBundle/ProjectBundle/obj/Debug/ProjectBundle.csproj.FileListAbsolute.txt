@@ -1,0 +1,11 @@
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/ProjectBundle.dll
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/ProjectBundle.pdb
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/LibraryBundle.dll
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/LSR.Domain.dll
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/LibraryBundle.pdb
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/bin/Debug/LSR.Domain.pdb
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/obj/Debug/optimized/
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/obj/Debug/ProjectBundle.csprojResolveAssemblyReference.cache
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/obj/Debug/ProjectBundle.csproj.CoreCompileInputs.cache
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/obj/Debug/ProjectBundle.dll
+/Users/lovisa/Projects/iOStst/LibraryBundle/ProjectBundle/obj/Debug/ProjectBundle.pdb
