@@ -1,9 +1,0 @@
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/bin/Debug/Data.Lite.dll
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/bin/Debug/Data.Lite.pdb
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/bin/Debug/Domain.dll
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/bin/Debug/Domain.pdb
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/obj/Debug/optimized/
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/obj/Debug/Data.Lite.csproj.CoreCompileInputs.cache
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/obj/Debug/Data.Lite.dll
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/obj/Debug/Data.Lite.pdb
-/Users/lovisa/Projects/iOStst/Services/Data.Lite/obj/Debug/Data.Lite.csprojResolveAssemblyReference.cache

@@ -1,7 +1,0 @@
-/Users/lovisa/Projects/iOStst/Services/Domain/bin/Debug/Domain.dll
-/Users/lovisa/Projects/iOStst/Services/Domain/bin/Debug/Domain.pdb
-/Users/lovisa/Projects/iOStst/Services/Domain/obj/Debug/optimized/
-/Users/lovisa/Projects/iOStst/Services/Domain/obj/Debug/Domain.csproj.CoreCompileInputs.cache
-/Users/lovisa/Projects/iOStst/Services/Domain/obj/Debug/Domain.dll
-/Users/lovisa/Projects/iOStst/Services/Domain/obj/Debug/Domain.pdb
-/Users/lovisa/Projects/iOStst/Services/Domain/obj/Debug/Domain.csprojResolveAssemblyReference.cache
