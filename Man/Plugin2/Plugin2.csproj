@@ -47,6 +47,9 @@
     <Reference Include="ValitorBinding">
       <HintPath>..\..\..\Desktop\GIT\pay-engine\Engine\Plugins\Valitor\ValitorBinding\bin\Debug\ValitorBinding.dll</HintPath>
     </Reference>
+    <Reference Include="ValitorBinding">
+      <HintPath>..\..\..\pay-engine\Engine\Plugins\Valitor\ValitorBinding\bin\Debug\ValitorBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

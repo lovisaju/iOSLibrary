@@ -1,9 +1,30 @@
 ﻿<Properties StartupConfiguration="{779B27A2-4AAA-475C-8959-ABF67AA55058}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOStst/UI/FrontPage/FontPageController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOStst/ViewController.cs">
     <Files>
-      <File FileName="iOStst/AppDelegate.cs" Line="30" Column="10" />
-      <File FileName="iOStst/UI/FrontPage/FontPageController.cs" Line="16" Column="58" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/msbuild/iOS/Xamarin.iOS.Common.targets" Line="1311" Column="10" />
+      <File FileName="iOStst/ViewController.cs" Line="9" Column="9" />
+      <File FileName="iOStst/Bundle/EngineService.cs" Line="13" Column="28" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iOStst" expanded="True">
+            <Node name="App" expanded="True">
+              <Node name="iOS" expanded="True">
+                <Node name="iOStst" expanded="True">
+                  <Node name="Bundle" expanded="True" />
+                  <Node name="ViewController.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Bundle" expanded="True">
+              <Node name="Man" expanded="True" />
+            </Node>
+            <Node name="Plugin1" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -12,4 +33,7 @@
   <MonoDevelop.Ide.ItemProperties.App.iOS.iOStst PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.c2a8487fccc07cb2f4373b464a6646d391cc1725" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>LibraryBundle/LibraryBundle.csproj</String>
+  </DisabledProjects>
 </Properties>

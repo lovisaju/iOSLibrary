@@ -6,9 +6,15 @@ namespace iOStst
 {
     public partial class ViewController : UIViewController
     {
+        private EngineService engineService;
+        
         protected ViewController(IntPtr handle) : base(handle)
         {
             // Note: this .ctor should not contain any initialization logic.
+
+            this.engineService = new EngineService(new Plugins.Plug1.PluginBundle1());
+
+            var result = this.engineService.Purchase("purchase");
         }
 
         public override void ViewDidLoad()

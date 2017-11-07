@@ -1,9 +1,0 @@
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/iOStst.exe
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/mscorlib.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Xamarin.iOS.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/System.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Services.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/LSR.Domain.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Domain.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Data.Lite.dll
-/Users/lovisa/Projects/iOStst/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-9.1/iOStst.app:/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/ProjectBundle.dll

@@ -1,6 +1,6 @@
-/Users/lovisa/iOStst/Man/bin/Debug/Man.dll
-/Users/lovisa/iOStst/Man/bin/Debug/Man.pdb
-/Users/lovisa/iOStst/Man/obj/Debug/optimized/
-/Users/lovisa/iOStst/Man/obj/Debug/Man.csproj.CoreCompileInputs.cache
-/Users/lovisa/iOStst/Man/obj/Debug/Man.dll
-/Users/lovisa/iOStst/Man/obj/Debug/Man.pdb
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/bin/Debug/Man.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/bin/Debug/Man.pdb
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/obj/Debug/optimized/
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/obj/Debug/Man.csproj.CoreCompileInputs.cache
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/obj/Debug/Man.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/obj/Debug/Man.pdb

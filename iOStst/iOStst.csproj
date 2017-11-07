@@ -90,22 +90,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="UI\" />
-    <Folder Include="UI\Base\" />
-    <Folder Include="UI\Form\" />
-    <Folder Include="UI\FrontPage\" />
-    <Folder Include="UI\Log\" />
-    <Folder Include="UI\Form\Table\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="UI\Base\ProgressView\" />
-    <Folder Include="UI\Base\Button\" />
+    <Folder Include="Bundle\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="UI\FrontPage\FrontPageController.xib" />
-    <InterfaceDefinition Include="UI\Base\ProgressView\ProgressView.xib" />
-    <InterfaceDefinition Include="UI\Base\Button\ctr.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -118,48 +107,20 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\FrontPage\FrontPageController.designer.cs">
-      <DependentUpon>FrontPageController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Base\BaseTableViewController.cs" />
-    <Compile Include="UI\Form\FormController.cs" />
-    <Compile Include="UI\Form\FormItem.cs" />
-    <Compile Include="UI\Form\Table\FormTableDataSource.cs" />
-    <Compile Include="UI\Form\Table\KeyboardInputCell.cs" />
-    <Compile Include="UI\Form\Table\KeyboardInputCell.designer.cs" />
-    <Compile Include="UI\FrontPage\FontPageController.cs" />
-    <Compile Include="Helpers\FileHelper.cs" />
-    <Compile Include="UI\Base\ProgressView\ProgressView.cs" />
-    <Compile Include="UI\Base\ProgressView\ProgressView.designer.cs" />
-    <Compile Include="UI\Base\Button\Button.cs" />
-    <Compile Include="UI\Base\Button\Button.designer.cs">
-      <DependentUpon>Button.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\FrontPage\SelectDevice.cs" />
-    <Compile Include="UI\FrontPage\SelectDevice.designer.cs">
-      <DependentUpon>SelectDevice.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Bundle\EngineService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LibraryBundle\ProjectBundle\ProjectBundle.csproj">
-      <Project>{3C369373-951B-4272-838D-EAEE4B9AB50D}</Project>
-      <Name>ProjectBundle</Name>
+    <ProjectReference Include="..\Man\Plugin1\Plugin1.csproj">
+      <Project>{AAB33D41-7C28-4BF4-9549-F1BF6672C17E}</Project>
+      <Name>Plugin1</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LibraryBundle\LSR.Domain\LSR.Domain.csproj">
-      <Project>{2CD1F002-6345-4B77-A3C0-AFC1F3CD0293}</Project>
-      <Name>LSR.Domain</Name>
+    <ProjectReference Include="..\Man\Plugin2\Plugin2.csproj">
+      <Project>{E71F0FCE-196F-418B-B169-288A10ED88C1}</Project>
+      <Name>Plugin2</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Services\Services.csproj">
-      <Project>{570E8416-2750-4722-8276-6D8DA3432BA3}</Project>
-      <Name>Services</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Services\Data.Lite\Data.Lite.csproj">
-      <Project>{8B94C6E5-E345-4565-9CF1-E2CB360816D9}</Project>
-      <Name>Data.Lite</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LibraryBundle\ProjectBundle2\ProjectBundle2.csproj">
-      <Project>{20E6C5F2-98E7-4083-A1F4-A9F3628C5A3F}</Project>
-      <Name>ProjectBundle2</Name>
+    <ProjectReference Include="..\Man\Man.csproj">
+      <Project>{82012FF3-ADB7-48EA-AF6A-90B83B7A83B2}</Project>
+      <Name>Man</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

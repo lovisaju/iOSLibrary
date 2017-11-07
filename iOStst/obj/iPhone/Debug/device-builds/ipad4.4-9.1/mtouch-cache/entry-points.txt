@@ -1,9 +1,0 @@
-Function=xamarin_timezone_get_data
-	/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/mscorlib.dll
-Function=xamarin_log
-	/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/mscorlib.dll
-Function=UIApplicationMain
-	/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Xamarin.iOS.dll
-Function=xamarin_get_block_descriptor
-	/Users/lovisa/Projects/iOStst/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-9.1/mtouch-cache/Link/Xamarin.iOS.dll
-Function=mono_pmip

@@ -9,8 +9,6 @@ void xamarin_register_modules_impl ()
 void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
-	xamarin_open_and_register ("ProjectBundle.dll", &exception_gchandle);
-	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }
 
@@ -20,7 +18,7 @@ void xamarin_setup_impl ()
 	xamarin_init_mono_debug = TRUE;
 	xamarin_executable_name = "iOStst.exe";
 	mono_use_llvm = FALSE;
-	xamarin_log_level = 2;
+	xamarin_log_level = 4;
 	xamarin_arch_name = "x86_64";
 	xamarin_marshal_objectivec_exception_mode = MarshalObjectiveCExceptionModeUnwindManagedCode;
 	xamarin_debug_mode = TRUE;

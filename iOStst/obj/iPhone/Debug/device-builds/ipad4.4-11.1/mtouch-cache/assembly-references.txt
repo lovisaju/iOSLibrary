@@ -1,0 +1,10 @@
+/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/iOStst.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/mscorlib.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/System.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/Mono.Security.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/System.Xml.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.2.1.0/lib/mono/Xamarin.iOS/System.Core.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/bin/Debug/Man.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/Plugin1/bin/Debug/Plugin1.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/Man/Plugin1/bin/Debug/PayExBinding.dll

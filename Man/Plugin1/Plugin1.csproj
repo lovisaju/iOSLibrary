@@ -45,7 +45,7 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="PayExBinding">
-      <HintPath>..\..\..\Desktop\GIT\pay-engine\Engine\Plugins\PayEx\PayExBinding\bin\Debug\PayExBinding.dll</HintPath>
+      <HintPath>..\..\..\pay-engine\Engine\Plugins\PayEx\PayExBinding\bin\Debug\PayExBinding.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
