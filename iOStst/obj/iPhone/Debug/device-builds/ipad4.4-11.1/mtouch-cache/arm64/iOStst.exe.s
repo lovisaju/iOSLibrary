@@ -1129,7 +1129,7 @@ bl _p_13
 .word 0x910003bf
 .word 0xa8cb7bfd
 .word 0xd65f03c0
-.word 0xd28011a0
+.word 0xd28011c0
 .word 0xaa1103e1
 bl _p_14
 
@@ -1455,7 +1455,7 @@ bl _p_22
 .word 0x910003bf
 .word 0xa8cc7bfd
 .word 0xd65f03c0
-.word 0xd28011a0
+.word 0xd28011c0
 .word 0xaa1103e1
 bl _p_14
 
@@ -1624,7 +1624,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -1758,7 +1758,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -1899,7 +1899,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -2033,7 +2033,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c87bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -2174,7 +2174,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -2315,7 +2315,7 @@ bl _p_21
 .word 0x910003bf
 .word 0xa8c97bfd
 .word 0xd65f03c0
-.word 0xd2800f60
+.word 0xd2800f80
 .word 0xaa1103e1
 bl _p_14
 
@@ -2833,8 +2833,8 @@ add x16, x16, mono_aot_iOStst_got@PAGEOFF
 ldr x16, [x16, #552]
 br x16
 .word 784
-	.no_dead_strip plt_iOStst_Plugins_Plug1_PluginBundle1__ctor
-plt_iOStst_Plugins_Plug1_PluginBundle1__ctor:
+	.no_dead_strip plt_iOStst_Plugins_Plug2_PluginBundle2__ctor
+plt_iOStst_Plugins_Plug2_PluginBundle2__ctor:
 _p_5:
 adrp x16, mono_aot_iOStst_got@PAGE+0
 add x16, x16, mono_aot_iOStst_got@PAGEOFF
@@ -3123,7 +3123,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "04054F86-E8B4-4615-B65D-05B49672564E"
+	.asciz "B2586ADD-0E43-4DD2-BB51-FFBF634597DD"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -3206,7 +3206,7 @@ _mono_aot_file_info:
 	.long 56,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 93,101,245,154,241,247,255,11,11,191,164,134,201,161,69,29
+	.byte 198,58,5,99,76,236,177,234,81,255,29,148,134,122,74,119
 	.globl _mono_aot_module_iOStst_info
 	.align 3
 _mono_aot_module_iOStst_info:

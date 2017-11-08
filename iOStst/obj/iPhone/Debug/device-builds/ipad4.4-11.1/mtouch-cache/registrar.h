@@ -29,69 +29,71 @@
 @class __UITapGestureRecognizer;
 @class __UISwipeGestureRecognizer;
 @class __UIScreenEdgePanGestureRecognizer;
-@class iBPBitmapContext;
-@class ICISMPDevice;
-@class ICAdministration;
-struct trampoline_struct_llp {
+@protocol IBarrcodeDelegate;
+@protocol ICISMPDevice;
+@protocol ICAdministration;
+struct trampoline_struct_llb {
 	long long v0;
 	long long v8;
-	void *v16;
+	char v16;
 };
 @protocol ICAdministrationDelegate;
 @protocol ICAdministrationStandAloneDelegate;
-struct trampoline_struct_sbpbppppppppppp {
+struct trampoline_struct_sbbbbbbbbbbbbbb {
 	short v0;
 	char v2;
-	void *v3;
-	char v7;
-	void *v8;
-	void *v12;
-	void *v16;
-	void *v20;
-	void *v24;
-	void *v28;
-	void *v32;
-	void *v36;
-	void *v40;
-	void *v44;
-	void *v48;
-};
-struct trampoline_struct_lllll {
-	long long v0;
-	long long v8;
-	long long v16;
-	long long v24;
-	long long v32;
-};
-@class ICBarCodeReader;
-@protocol ICBarCodeReaderDelegate;
-@protocol ICISMPDeviceDelegate;
-@class ICISMPDeviceExtension;
-@protocol ICISMPDeviceExtensionDelegate;
-@class ICNetwork;
-@protocol ICNetworkDelegate;
-@class ICPclService;
-struct trampoline_struct_spbbbppbb {
-	short v0;
-	void *v2;
+	char v3;
+	char v4;
+	char v5;
 	char v6;
 	char v7;
 	char v8;
-	void *v9;
-	void *v13;
-	char v17;
-	char v18;
+	char v9;
+	char v10;
+	char v11;
+	char v12;
+	char v13;
+	char v14;
+	char v15;
+};
+struct trampoline_struct_iiiii {
+	int v0;
+	int v4;
+	int v8;
+	int v12;
+	int v16;
+};
+@protocol ICBarCodeReader;
+@protocol ICBarCodeReaderDelegate;
+@protocol ICCommunicationPeripherals;
+@protocol ICCommunicationPeripheralsDelegate;
+@protocol ICISMPDeviceDelegate;
+@protocol ICISMPDeviceExtension;
+@protocol ICISMPDeviceExtensionDelegate;
+@protocol ICNetwork;
+@protocol ICNetworkDelegate;
+@protocol ICommunicationManager;
+@protocol ICPclService;
+struct trampoline_struct_sbbbbbbbb {
+	short v0;
+	char v2;
+	char v3;
+	char v4;
+	char v5;
+	char v6;
+	char v7;
+	char v8;
+	char v9;
 };
 @protocol ICPclServiceDelegate;
-@class ICPPP;
+@protocol ICPPP;
 @protocol ICPPPDelegate;
-@class ICPrinter;
-@protocol ICPrinterDelegate;
-@class ICSoftwareComponent;
-@class ICSPP;
-@class ICSSLParameters;
-@class ICTerminal;
-@class ICTmsInformation;
+@protocol ICSoftwareComponent;
+@protocol ICTerminal;
+@protocol ICTmsInformation;
+@protocol IVALAmount;
+@protocol IVALCard;
+@protocol IVALRequest;
 
 @interface AppDelegate : NSObject<UIApplicationDelegate> {
 }
@@ -141,75 +143,60 @@ struct trampoline_struct_spbbbppbb {
 	-(void) target:(UIGestureRecognizer *)p0;
 @end
 
-@interface iBPBitmapContext : NSObject {
-}
-	-(void) clearContext;
-	-(void) drawBitmapWithImage:(UIImage *)p0;
-	-(void) drawBitmapWithImage:(UIImage *)p0 andSize:(CGSize)p1;
-	-(void) drawText:(NSString *)p0;
-	-(UIImage *) getImageAt:(int)p0 maxHeight:(int)p1;
-	-(void) lineFeed;
-	-(NSUInteger) alignment;
-	-(void) setAlignment:(NSUInteger)p0;
-	-(NSUInteger) characterSpacing;
-	-(void) setCharacterSpacing:(NSUInteger)p0;
-	-(CGFloat) drawingPosition;
-	-(UIImage *) getImage;
-	-(NSUInteger) lineFeedStep;
-	-(void) setLineFeedStep:(NSUInteger)p0;
-	-(NSString *) textFont;
-	-(void) setTextFont:(NSString *)p0;
-	-(NSUInteger) textSize;
-	-(void) setTextSize:(NSUInteger)p0;
-	-(id) init;
-	-(id) initWithWidth:(CGFloat)p0 andHeight:(CGFloat)p1;
+@protocol IBarrcodeDelegate
+	@optional -(void) didReceiveScanData:(NSString *)p0;
 @end
 
-@interface ICISMPDevice : NSObject {
-}
-	-(NSInputStream *) inStream;
-	-(BOOL) isAvailable;
-	-(NSOutputStream *) outStream;
-	-(NSString *) protocolName;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
-	-(id) initWithProtocolString:(NSString *)p0;
-	-(id) initWithStreamIn:(NSInputStream *)p0 andStreamOut:(NSOutputStream *)p1;
+@protocol ICISMPDevice
+	@optional @property (nonatomic, assign, readonly) NSString * protocolName;
+	@optional @property (nonatomic, assign, readonly) BOOL isAvailable;
+	@optional @property (nonatomic, assign, readonly) NSInputStream * inStream;
+	@optional @property (nonatomic, assign, readonly) NSOutputStream * outStream;
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional +(void) setWantedDevice:(NSString *)p0;
+	@optional +(NSString *) severityLevelString:(int)p0;
+	@optional +(NSString *) severityLevelStringA:(int)p0;
+	@optional +(NSString *) getRevisionString;
+	@optional +(NSString *) getVersionString;
+	@optional +(NSString *) serialNumber;
+	@optional +(NSString *) modelNumber;
+	@optional +(NSString *) firmwareRevision;
+	@optional +(NSString *) hardwareRevision;
+	@optional +(NSString *) name;
+	@optional +(NSString *) getWantedDevice;
+	@optional +(NSMutableArray *) getConnectedTerminals;
 @end
 
-@interface ICAdministration : ICISMPDevice {
-}
-	-(void) close;
-	-(int) getPeripheralStatus:(unsigned int)p0;
-	-(void) reset:(NSUInteger)p0;
-	-(BOOL) sendShortcut:(NSString *)p0;
-	-(BOOL) setBacklightTimeout:(NSUInteger)p0 andSuspendTimeout:(NSUInteger)p1;
-	-(int) setLockBacklight:(NSUInteger)p0;
-	-(BOOL) setServerConnectionState:(BOOL)p0;
-	-(int) setTmsInformation:(id)p0;
-	-(BOOL) simulateKey:(NSUInteger)p0;
-	-(int) updateEncryptionKeyWithServerByHostName:(NSString *)p0 andPort:(NSUInteger)p1;
-	-(int) updateEncryptionKeyWithServerIP:(NSString *)p0 andPort:(NSUInteger)p1;
-	-(NSString *) getAddonVersion;
-	-(NSInteger) backlightTimeout;
-	-(NSInteger) batteryLevel;
-	-(NSDate *) getDate;
-	-(int) eraseEncryptionKey;
-	-(NSString *) getFullSerialNumber;
-	-(struct trampoline_struct_llp) getInformation;
-	-(BOOL) isIdle;
-	-(int) open;
-	-(BOOL) setDate;
-	-(NSArray *) getSoftwareComponents;
-	-(NSString *) getSpmciVersion;
-	-(BOOL) startRemoteDownload;
-	-(NSInteger) suspendTimeout;
-	-(id) getTmsInformation;
-	-(int) validateEncryptionKey;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICAdministration
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, assign, readonly) int open;
+	@optional @property (nonatomic, assign, readonly) NSInteger backlightTimeout;
+	@optional @property (nonatomic, assign, readonly) NSInteger suspendTimeout;
+	@optional @property (nonatomic, assign, readonly) NSInteger batteryLevel;
+	@optional @property (nonatomic, assign, readonly) BOOL setDate;
+	@optional @property (nonatomic, assign, readonly) NSDate * getDate;
+	@optional @property (nonatomic, assign, readonly) BOOL isIdle;
+	@optional @property (nonatomic, assign, readonly) struct trampoline_struct_llb getInformation;
+	@optional @property (nonatomic, assign, readonly) NSString * getFullSerialNumber;
+	@optional @property (nonatomic, assign, readonly) NSArray * getSoftwareComponents;
+	@optional @property (nonatomic, assign, readonly) NSString * getSpmciVersion;
+	@optional @property (nonatomic, assign, readonly) BOOL startRemoteDownload;
+	@optional @property (nonatomic, assign, readonly) int validateEncryptionKey;
+	@optional @property (nonatomic, assign, readonly) int eraseEncryptionKey;
+	@optional @property (nonatomic, assign, readonly) id getTmsInformation;
+	@optional @property (nonatomic, assign, readonly) NSString * getAddonVersion;
+	@optional +(id) sharedChannel;
+	@optional -(void) close;
+	@optional -(BOOL) setBacklightTimeout:(unsigned int)p0 andSuspendTimeout:(unsigned int)p1;
+	@optional -(int) getPeripheralStatus:(unsigned int)p0;
+	@optional -(void) reset:(unsigned int)p0;
+	@optional -(BOOL) simulateKey:(unsigned int)p0;
+	@optional -(int) updateEncryptionKeyWithServerIP:(NSString *)p0 andPort:(unsigned int)p1;
+	@optional -(int) updateEncryptionKeyWithServerByHostName:(NSString *)p0 andPort:(unsigned int)p1;
+	@optional -(BOOL) setServerConnectionState:(BOOL)p0;
+	@optional -(int) setTmsInformation:(id)p0;
+	@optional -(int) setLockBacklight:(unsigned int)p0;
+	@optional -(BOOL) sendShortcut:(NSString *)p0;
 @end
 
 @protocol ICAdministrationDelegate
@@ -221,8 +208,8 @@ struct trampoline_struct_spbbbppbb {
 @protocol ICAdministrationStandAloneDelegate
 	@optional @property (nonatomic, assign, readonly) NSInteger shouldEndReceipt;
 	@optional @property (nonatomic, assign, readonly) NSInteger shouldAddSignature;
-	@optional -(void) transactionDidEndWithTimeoutFlag:(BOOL)p0 result:(struct trampoline_struct_sbpbppppppppppp)p1 andData:(NSData *)p2;
-	@optional -(void) shouldDoSignatureCapture:(struct trampoline_struct_lllll)p0;
+	@optional -(void) transactionDidEndWithTimeoutFlag:(BOOL)p0 result:(struct trampoline_struct_sbbbbbbbbbbbbbb)p1 andData:(NSData *)p2;
+	@optional -(void) shouldDoSignatureCapture:(struct trampoline_struct_iiiii)p0;
 	@optional -(void) signatureTimeoutExceeded;
 	@optional -(void) messageReceivedWithData:(NSData *)p0;
 	@optional -(void) shouldPrintText:(NSString *)p0 withFont:(UIFont *)p1 andAlignment:(NSInteger)p2;
@@ -230,56 +217,49 @@ struct trampoline_struct_spbbbppbb {
 	@optional -(void) shouldPrintText:(NSString *)p0 withFont:(UIFont *)p1 alignment:(NSInteger)p2 XScaling:(NSInteger)p3 YScaling:(NSInteger)p4 underline:(BOOL)p5 bold:(BOOL)p6;
 	@optional -(void) shouldPrintRawText:(NSString *)p0 withCharset:(NSInteger)p1 withFont:(UIFont *)p2 alignment:(NSInteger)p3 XScaling:(NSInteger)p4 YScaling:(NSInteger)p5 underline:(BOOL)p6 bold:(BOOL)p7;
 	@optional -(void) shouldPrintImage:(UIImage *)p0;
-	@optional -(void) shouldFeedPaperWithLines:(NSUInteger)p0;
+	@optional -(void) shouldFeedPaperWithLines:(unsigned int)p0;
 	@optional -(void) shouldCutPaper;
 	@optional -(NSInteger) shouldStartReceipt:(NSInteger)p0;
 	@optional -(void) shouldSendPclAddonInfos;
 @end
 
-@interface ICBarCodeReader : ICISMPDevice {
-}
-	-(void) applyDefaultConfiguration;
-	-(void) bufferWriteCommands;
-	-(void) configureBarCodeReaderMode:(int)p0;
-	-(void) configureImagerMode:(int)p0;
-	-(void) enableAimerFlashing:(BOOL)p0;
-	-(void) enableSymbology:(int)p0 enabled:(BOOL)p1;
-	-(void) enableTransmitEAN8BarcodesAsEAN13:(BOOL)p0;
-	-(void) enableTransmitUPCABarcodesAsEAN13:(BOOL)p0;
-	-(void) enableTransmitUPCEBarcodesAsUPCA:(BOOL)p0;
-	-(BOOL) enableTrigger:(BOOL)p0;
-	-(void) goodScanBeepEnable:(BOOL)p0;
-	-(void) illuminationLevel:(int)p0;
-	-(void) illuminationMode:(int)p0;
-	-(BOOL) isSymbologyEnabled:(int)p0;
-	-(void) lightingGoal:(int)p0;
-	-(void) lightingMode:(int)p0;
-	-(void) playBeep:(int)p0 during:(int)p1 andWait:(int)p2;
-	-(void) powerOff;
-	-(void) setBeep:(BOOL)p0 frequency:(int)p1 andLength:(int)p2;
-	-(void) setNonVolatileMode:(BOOL)p0;
-	-(void) setScanTimeout:(int)p0;
-	-(void) softReset;
-	-(void) startScan;
-	-(void) startSnapshot;
-	-(void) stopScan;
-	-(void) unbufferSetupCommands;
-	-(void) useEnhancedBCRSensitivity:(BOOL)p0;
-	-(BOOL) aimerFlashing;
-	-(int) getBarCodeReaderMode;
-	-(NSString *) getFirmwareVersion;
-	-(int) illuminiationMode;
-	-(BOOL) isEnhancedBCRSensitivityEnabled;
-	-(BOOL) isTriggerEnabled;
-	-(int) iscpRetryCount;
-	-(void) setIscpRetryCount:(int)p0;
-	-(int) powerOn;
-	-(int) getScanTimeout;
-	-(NSString *) scannerModel;
-	-(NSString *) scannerName;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICBarCodeReader
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, assign) int iscpRetryCount;
+	@optional @property (nonatomic, assign, readonly) int getBarCodeReaderMode;
+	@optional @property (nonatomic, assign, readonly) int powerOn;
+	@optional @property (nonatomic, assign, readonly) int getScanTimeout;
+	@optional @property (nonatomic, assign, readonly) BOOL isTriggerEnabled;
+	@optional @property (nonatomic, assign, readonly) NSString * getFirmwareVersion;
+	@optional @property (nonatomic, assign, readonly) NSString * scannerName;
+	@optional @property (nonatomic, assign, readonly) NSString * scannerModel;
+	@optional -(void) startScan;
+	@optional -(void) stopScan;
+	@optional -(void) startSnapshot;
+	@optional -(void) bufferWriteCommands;
+	@optional -(void) unbufferSetupCommands;
+	@optional -(void) configureBarCodeReaderMode:(int)p0;
+	@optional +(BOOL) isSymbologySupported:(int)p0;
+	@optional -(void) enableSymbologies:(int)p0 symbologyCount:(int)p1;
+	@optional -(void) enableSymbology:(int)p0 enabled:(BOOL)p1;
+	@optional -(BOOL) isSymbologyEnabled:(int)p0;
+	@optional -(void) enableTransmitUPCABarcodesAsEAN13:(BOOL)p0;
+	@optional -(void) enableTransmitUPCEBarcodesAsUPCA:(BOOL)p0;
+	@optional -(void) enableTransmitEAN8BarcodesAsEAN13:(BOOL)p0;
+	@optional -(void) configureImagerMode:(int)p0;
+	@optional -(void) enableAimerFlashing:(BOOL)p0;
+	@optional -(void) illuminationMode:(int)p0;
+	@optional -(void) powerOff;
+	@optional -(void) softReset;
+	@optional -(void) applyDefaultConfiguration;
+	@optional -(void) setScanTimeout:(int)p0;
+	@optional -(void) setNonVolatileMode:(BOOL)p0;
+	@optional +(NSString *) symbologyToText:(int)p0;
+	@optional -(void) goodScanBeepEnable:(BOOL)p0;
+	@optional -(void) setBeep:(BOOL)p0 frequency:(int)p1 andLength:(int)p2;
+	@optional -(void) playBeep:(int)p0 during:(int)p1 andWait:(int)p2;
+	@optional -(BOOL) enableTrigger:(BOOL)p0;
+	@optional +(NSObject *) sharedICBarCodeReader;
 @end
 
 @protocol ICBarCodeReaderDelegate
@@ -293,6 +273,22 @@ struct trampoline_struct_spbbbppbb {
 	@optional -(void) barcodeSerialData:(NSData *)p0 incoming:(BOOL)p1;
 @end
 
+@protocol ICCommunicationPeripherals
+	@optional @property (nonatomic, assign, readonly) BOOL gprsIsConnected;
+	@optional @property (nonatomic, assign, readonly) NSData * gprsMacAddress;
+	@optional @property (nonatomic, assign, readonly) NSData * gprsSimCardNumber;
+	@optional @property (nonatomic, assign, readonly) BOOL wlanIsConnected;
+	@optional @property (nonatomic, assign, readonly) NSData * wlanMacAddress;
+	@optional @property (nonatomic, assign, readonly) unsigned int reachabilityStatus;
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional -(void) currentReachabilityStatus;
+	@optional -(void) getMacAddresses;
+@end
+
+@protocol ICCommunicationPeripheralsDelegate
+	@optional -(void) networkReachabilityDidChanged;
+@end
+
 @protocol ICISMPDeviceDelegate
 	@optional -(void) accessoryDidConnect:(id)p0;
 	@optional -(void) accessoryDidDisconnect:(id)p0;
@@ -300,21 +296,15 @@ struct trampoline_struct_spbbbppbb {
 	@optional -(void) logSerialData:(NSData *)p0 incomming:(BOOL)p1;
 @end
 
-@interface ICISMPDeviceExtension : ICISMPDevice {
-}
-	-(int) SendData:(NSData *)p0;
-	-(BOOL) SendDataAsync:(NSData *)p0;
-	-(int) SendString:(NSString *)p0;
-	-(BOOL) SendStringAsync:(NSString *)p0;
-	-(unsigned int) ReceiveBufferSize;
-	-(void) SetReceiveBufferSize:(unsigned int)p0;
-	-(unsigned int) TotalNbFrameReceived;
-	-(void) setM_TotalNbFrameReceived:(unsigned int)p0;
-	-(unsigned int) TotalNbFrameSent;
-	-(void) setM_TotalNbFrameSent:(unsigned int)p0;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICISMPDeviceExtension
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, assign, getter = TotalNbFrameReceived) unsigned int m_TotalNbFrameReceived;
+	@optional @property (nonatomic, assign, getter = ReceiveBufferSize, setter = SetReceiveBufferSize:) unsigned int m_ReceiveBufferSize;
+	@optional @property (nonatomic, assign, getter = TotalNbFrameSent) unsigned int m_TotalNbFrameSent;
+	@optional -(int) SendData:(NSData *)p0;
+	@optional -(BOOL) SendDataAsync:(NSData *)p0;
+	@optional -(int) SendString:(NSString *)p0;
+	@optional -(BOOL) SendStringAsync:(NSString *)p0;
 @end
 
 @protocol ICISMPDeviceExtensionDelegate
@@ -324,79 +314,104 @@ struct trampoline_struct_spbbbppbb {
 	@optional -(void) didSendData:(NSData *)p0 withNumberOfBytesSent:(unsigned int)p1 fromICISMPDevice:(id)p2;
 @end
 
-@interface ICNetwork : ICISMPDevice {
-}
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICNetwork
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional +(NSObject *) sharedChannel;
 @end
 
 @protocol ICNetworkDelegate
 	@optional -(void) networkData:(NSData *)p0 incoming:(BOOL)p1;
-	@optional -(void) networkWillConnectToHost:(NSString *)p0 onPort:(NSUInteger)p1;
-	@optional -(void) networkDidConnectToHost:(NSString *)p0 onPort:(NSUInteger)p1;
-	@optional -(void) networkFailedToConnectToHost:(NSString *)p0 onPort:(NSUInteger)p1;
-	@optional -(void) networkDidDisconnectFromHost:(NSString *)p0 onPort:(NSUInteger)p1;
-	@optional -(void) networkDidReceiveErrorWithHost:(NSString *)p0 andPort:(NSUInteger)p1;
+	@optional -(void) networkWillConnectToHost:(NSString *)p0 onPort:(unsigned int)p1;
+	@optional -(void) networkDidConnectToHost:(NSString *)p0 onPort:(unsigned int)p1;
+	@optional -(void) networkFailedToConnectToHost:(NSString *)p0 onPort:(unsigned int)p1;
+	@optional -(void) networkDidDisconnectFromHost:(NSString *)p0 onPort:(unsigned int)p1;
+	@optional -(void) networkDidReceiveErrorWithHost:(NSString *)p0 andPort:(unsigned int)p1;
 @end
 
-@interface ICPclService : NSObject {
-}
-	-(void) accessoryDidConnect:(id)p0;
-	-(void) accessoryDidDisconnect:(id)p0;
-	-(int) addDynamicBridge:(NSInteger)p0 :(int)p1;
-	-(int) addDynamicBridgeLocal:(NSInteger)p0 :(int)p1;
-	-(void) confLogEntry:(NSString *)p0 withSeverity:(int)p1;
-	-(void) confSerialData:(NSData *)p0 incoming:(BOOL)p1;
-	-(void) doTransaction:(struct trampoline_struct_spbbbppbb)p0;
-	-(void) doTransactionEx:(struct trampoline_struct_spbbbppbb)p0 withData:(NSData *)p1 andApplicationNumber:(NSUInteger)p2;
-	-(NSUInteger) getDoTransactionTimeout;
-	-(BOOL) inputSimul:(NSUInteger)p0;
-	-(BOOL) launchM2OSshorcut:(NSString *)p0;
-	-(void) logEntry:(NSString *)p0 withSeverity:(int)p1;
-	-(void) logSerialData:(NSData *)p0 incomming:(BOOL)p1;
-	-(unsigned int) printBitmap:(UIImage *)p0;
-	-(unsigned int) printBitmap:(UIImage *)p0 lastBitmap:(BOOL)p1;
-	-(unsigned int) printBitmap:(UIImage *)p0 size:(CGSize)p1 alignment:(NSInteger)p2;
-	-(unsigned int) printBitmap:(UIImage *)p0 size:(CGSize)p1 alignment:(NSInteger)p2 lastBitmap:(BOOL)p3;
-	-(unsigned int) printLogoWithName:(NSString *)p0;
-	-(unsigned int) printText:(NSString *)p0;
-	-(void) resetTerminal:(NSUInteger)p0;
-	-(BOOL) sendMessage:(NSData *)p0;
-	-(BOOL) setBacklightTimeout:(NSUInteger)p0;
-	-(void) setDoTransactionTimeout:(NSUInteger)p0;
-	-(int) setKeepAliveDelay:(int)p0 Interval:(int)p1 andCount:(int)p2;
-	-(int) setLockBacklight:(NSUInteger)p0;
-	-(BOOL) setServerConnectionState:(BOOL)p0;
-	-(BOOL) setSuspendTimeout:(NSUInteger)p0;
-	-(int) setTmsInformation:(id)p0;
-	-(void) shouldScheduleWakeUpNotification:(NSObject *)p0;
-	-(unsigned int) startPclServiceWith:(id)p0 andSecurity:(id)p1;
-	-(void) stopPclService;
-	-(unsigned int) storeLogoWithName:(NSString *)p0 andImage:(UIImage *)p1;
-	-(BOOL) submitSignatureWithImage:(UIImage *)p0;
-	-(NSString *) getAddonVersion;
-	-(NSArray *) getAvailableTerminals;
-	-(NSInteger) getBacklightTimeout;
-	-(NSInteger) getBatteryLevel;
-	-(unsigned int) closePrinter;
-	-(BOOL) doUpdate;
-	-(NSString *) getFullSerialNumber;
-	-(NSUInteger) iBPMaxBitmapHeight;
-	-(NSUInteger) iBPMaxBitmapWidth;
-	-(unsigned int) openPrinter;
-	-(unsigned int) getPclServiceState;
-	-(unsigned int) getPrinterStatus;
-	-(BOOL) setTerminalTime;
-	-(NSString *) getSpmciVersion;
-	-(NSInteger) getSuspendTimeout;
-	-(NSArray *) getTerminalComponents;
-	-(struct trampoline_struct_llp) getTerminalInfo;
-	-(NSDate *) getTerminalTime;
-	-(id) getTmsInformation;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICommunicationManager
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, retain) NSMutableArray <NSString *>* arrConsoleMsgs;
+	@optional @property (nonatomic, assign) BOOL shouldReconnectOnAppResume;
+	@optional @property (nonatomic, assign, readonly) int timeoutInSeconds;
+	@optional @property (nonatomic, assign, readonly) NSArray * getConnectedTerminals;
+	@optional @property (nonatomic, assign, readonly) BOOL bluetoothOpenChannelResult;
+	@optional @property (nonatomic, assign, readonly) BOOL hasBTConnection;
+	@optional @property (nonatomic, assign, readonly) BOOL hasTCPConnection;
+	@optional -(void) startScan;
+	@optional -(void) stopScan;
+	@optional -(void) configureScannerForAllSymbols;
+	@optional -(void) configureScannerForCustomSymbols;
+	@optional -(void) configureScannerForQRorAztec;
+	@optional -(void) shouldOpenTCPConnectionOnAppResume:(BOOL)p0;
+	@optional -(void) setTimeoutForRequests:(int)p0;
+	@optional -(void) setWantedDevice:(NSString *)p0;
+	@optional -(void) setWantedDeviceToSelectedCompanion;
+	@optional -(void) emptyRequestQueue;
+	@optional -(void) removeRequestFromQueue:(id)p0;
+	@optional -(void) setupChannels;
+	@optional -(void) closeChannels;
+	@optional -(void) startTcpServer;
+	@optional -(void) demandPingWithCompletionBlock:(id)p0 statusBlock:(id)p1;
+	@optional -(void) demandAuthorizationWithType:(unsigned int)p0 Amount:(id)p1 card:(id)p2 shouldPrintReceipt:(BOOL)p3 statusMessagesEnabled:(BOOL)p4 completion:(id)p5 statusMsgBlock:(id)p6;
+	@optional -(void) demandRefundWithAmount:(id)p0 card:(id)p1 shouldPrintReceipt:(BOOL)p2 statusMessagesEnabled:(BOOL)p3 completion:(id)p4 statusMsgBlock:(id)p5;
+	@optional -(void) demandReversalWithAmount:(id)p0 card:(id)p1 shouldPrintReceipt:(BOOL)p2 statusMessagesEnabled:(BOOL)p3 msgID:(NSString *)p4 completion:(id)p5 statusMsgBlock:(id)p6;
+	@optional -(void) demandBatchSendWithPrintOption:(BOOL)p0 statusMessagesEnabled:(BOOL)p1 completion:(id)p2 statusMsgBlock:(id)p3;
+	@optional -(void) demandLastTransactionWithPosPrint:(BOOL)p0 statusMessagesEnabled:(BOOL)p1 completion:(id)p2 statusMsgBlock:(id)p3;
+	@optional -(void) demandLastReceiptWithPosPrint:(BOOL)p0 statusMessagesEnabled:(BOOL)p1 completion:(id)p2 statusMsgBlock:(id)p3;
+	@optional -(void) demandPrintListWithPosPrintOption:(unsigned int)p0 posPrintEnabled:(BOOL)p1 statusMessagesEnabled:(BOOL)p2 completion:(id)p3 statusMsgBlock:(id)p4;
+	@optional -(void) demandLinePrintingWithPosPrintEnabled:(BOOL)p0 statusMessagesEnabled:(BOOL)p1 strMessage:(NSString *)p2 completion:(id)p3 statusMsgBlock:(id)p4;
+	@optional +(NSDictionary *) parse:(NSString *)p0;
+	@optional +(NSObject *) manager;
+@end
+
+@protocol ICPclService
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, assign, readonly) NSMutableArray * getAvailableTerminals;
+	@optional @property (nonatomic, assign, readonly) BOOL setTerminalTime;
+	@optional @property (nonatomic, assign, readonly) NSDate * getTerminalTime;
+	@optional @property (nonatomic, assign, readonly) struct trampoline_struct_llb getTerminalInfo;
+	@optional @property (nonatomic, assign, readonly) NSString * getFullSerialNumber;
+	@optional @property (nonatomic, assign, readonly) NSArray * getTerminalComponents;
+	@optional @property (nonatomic, assign, readonly) NSString * getSpmciVersion;
+	@optional @property (nonatomic, assign, readonly) NSString * getAddonVersion;
+	@optional @property (nonatomic, assign, readonly) BOOL doUpdate;
+	@optional @property (nonatomic, assign, readonly) id getTmsInformation;
+	@optional @property (nonatomic, assign, readonly) NSUInteger getDoTransactionTimeout;
+	@optional @property (nonatomic, assign, readonly) unsigned int openPrinter;
+	@optional @property (nonatomic, assign, readonly) unsigned int closePrinter;
+	@optional @property (nonatomic, assign, readonly) unsigned int getPrinterStatus;
+	@optional @property (nonatomic, assign, readonly) NSUInteger iBPMaxBitmapWidth;
+	@optional @property (nonatomic, assign, readonly) NSUInteger iBPMaxBitmapHeight;
+	@optional @property (nonatomic, assign, readonly) NSInteger getBacklightTimeout;
+	@optional @property (nonatomic, assign, readonly) NSInteger getSuspendTimeout;
+	@optional @property (nonatomic, assign, readonly) NSInteger getBatteryLevel;
+	@optional -(void) stopPclService;
+	@optional -(void) resetTerminal:(unsigned int)p0;
+	@optional -(BOOL) inputSimul:(unsigned int)p0;
+	@optional -(int) setTmsInformation:(id)p0;
+	@optional -(int) setLockBacklight:(unsigned int)p0;
+	@optional -(BOOL) launchM2OSshorcut:(NSString *)p0;
+	@optional -(BOOL) sendMessage:(NSData *)p0;
+	@optional -(void) doTransaction:(struct trampoline_struct_sbbbbbbbb)p0;
+	@optional -(void) doTransactionEx:(struct trampoline_struct_sbbbbbbbb)p0 withData:(NSData *)p1 andApplicationNumber:(NSUInteger)p2;
+	@optional -(void) setDoTransactionTimeout:(NSUInteger)p0;
+	@optional -(BOOL) submitSignatureWithImage:(UIImage *)p0;
+	@optional -(unsigned int) printText:(NSString *)p0;
+	@optional -(unsigned int) printBitmap:(UIImage *)p0;
+	@optional -(unsigned int) printBitmap:(UIImage *)p0 lastBitmap:(BOOL)p1;
+	@optional -(unsigned int) printBitmap:(UIImage *)p0 size:(CGSize)p1 alignment:(NSInteger)p2;
+	@optional -(unsigned int) printBitmap:(UIImage *)p0 size:(CGSize)p1 alignment:(NSInteger)p2 lastBitmap:(BOOL)p3;
+	@optional -(unsigned int) storeLogoWithName:(NSString *)p0 andImage:(UIImage *)p1;
+	@optional -(unsigned int) printLogoWithName:(NSString *)p0;
+	@optional -(unsigned int) setPrinterFont:(unsigned int)p0;
+	@optional +(NSString *) severityLevelString:(int)p0;
+	@optional -(BOOL) setBacklightTimeout:(unsigned int)p0;
+	@optional -(BOOL) setSuspendTimeout:(unsigned int)p0;
+	@optional -(void) addDynamicBridge:(NSInteger)p0 :(int)p1;
+	@optional -(void) addDynamicBridgeLocal:(NSInteger)p0 :(int)p1;
+	@optional -(BOOL) setServerConnectionState:(BOOL)p0;
+	@optional -(int) setKeepAliveDelay:(int)p0 Interval:(int)p1 andCount:(int)p2;
+	@optional +(id) sharedICPclService;
 @end
 
 @protocol ICPclServiceDelegate
@@ -406,33 +421,31 @@ struct trampoline_struct_spbbbppbb {
 	@optional -(void) notifyDisconnection:(id)p0;
 	@optional -(void) pclLogEntry:(NSString *)p0 withSeverity:(int)p1;
 	@optional -(void) pclLogSerialData:(NSData *)p0 incoming:(BOOL)p1;
-	@optional -(void) shouldDoSignatureCapture:(struct trampoline_struct_lllll)p0;
+	@optional -(void) shouldDoSignatureCapture:(struct trampoline_struct_iiiii)p0;
 	@optional -(void) signatureTimeoutExceeded;
-	@optional -(void) transactionDidEndWithTimeoutFlag:(BOOL)p0 result:(struct trampoline_struct_sbpbppppppppppp)p1 andData:(NSData *)p2;
+	@optional -(void) transactionDidEndWithTimeoutFlag:(BOOL)p0 result:(struct trampoline_struct_sbbbbbbbbbbbbbb)p1 andData:(NSData *)p2;
 	@optional -(void) receiveMessage:(NSData *)p0;
 	@optional -(void) shouldPrintText:(NSString *)p0 withFont:(UIFont *)p1 alignment:(NSInteger)p2 XScaling:(NSInteger)p3 YScaling:(NSInteger)p4 underline:(BOOL)p5 bold:(BOOL)p6;
 	@optional -(void) shouldPrintRawText:(NSString *)p0 withCharset:(NSInteger)p1 withFont:(UIFont *)p2 alignment:(NSInteger)p3 XScaling:(NSInteger)p4 YScaling:(NSInteger)p5 underline:(BOOL)p6 bold:(BOOL)p7;
 	@optional -(void) shouldPrintImage:(UIImage *)p0;
-	@optional -(void) shouldFeedPaperWithLines:(NSUInteger)p0;
+	@optional -(void) shouldFeedPaperWithLines:(unsigned int)p0;
 	@optional -(void) shouldCutPaper;
 	@optional -(NSInteger) shouldStartReceipt:(NSInteger)p0;
 @end
 
-@interface ICPPP : ICISMPDevice {
-}
-	-(int) addTerminalToiOSBridgeOnPort:(NSInteger)p0;
-	-(int) addiOSToTerminalBridgeLocalOnPort:(NSInteger)p0;
-	-(int) addiOSToTerminalBridgeOnPort:(NSInteger)p0;
-	-(void) closeChannel;
-	-(int) setKeepAliveDelay:(int)p0 Interval:(int)p1 andCount:(int)p2;
-	-(NSString *) dns;
-	-(NSString *) IP;
-	-(int) openChannel;
-	-(NSString *) submask;
-	-(NSString *) terminalIP;
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICPPP
+	@optional @property (nonatomic, assign) NSObject * delegate;
+	@optional @property (nonatomic, assign, readonly) NSString * IP;
+	@optional @property (nonatomic, assign, readonly) NSString * submask;
+	@optional @property (nonatomic, assign, readonly) NSString * dns;
+	@optional @property (nonatomic, assign, readonly) NSString * terminalIP;
+	@optional @property (nonatomic, assign, readonly) int openChannel;
+	@optional -(void) closeChannel;
+	@optional -(void) addiOSToTerminalBridgeOnPort:(NSInteger)p0;
+	@optional -(void) addTerminalToiOSBridgeOnPort:(NSInteger)p0;
+	@optional -(void) addiOSToTerminalBridgeLocalOnPort:(NSInteger)p0;
+	@optional -(int) setKeepAliveDelay:(int)p0 Interval:(int)p1 andCount:(int)p2;
+	@optional +(id) sharedChannel;
 @end
 
 @protocol ICPPPDelegate
@@ -440,73 +453,58 @@ struct trampoline_struct_spbbbppbb {
 	@required -(void) pppChannelDidClose;
 @end
 
-@interface ICPrinter : ICISMPDevice {
-}
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol ICSoftwareComponent
+	@optional @property (nonatomic, assign, readonly) NSString * name;
+	@optional @property (nonatomic, assign) NSString * version;
+	@optional @property (nonatomic, assign, readonly) NSString * crc;
+	@optional @property (nonatomic, assign, readonly) unsigned int type;
 @end
 
-@protocol ICPrinterDelegate
-	@optional -(void) receivedPrinterData:(NSData *)p0;
-	@optional -(void) receivedPrinterData:(NSData *)p0 numberOfLines:(NSInteger)p1;
-	@optional -(void) printingDidEndWithRowNumber:(NSUInteger)p0;
+@protocol ICTerminal
+	@optional @property (nonatomic, retain) NSMutableString * terminalName;
+	@optional @property (nonatomic, retain) NSMutableString * terminalMacAddress;
+	@optional @property (nonatomic, assign) BOOL isBluetooth;
+	@optional @property (nonatomic, retain) NSMutableString * terminalIPAddress;
 @end
 
-@interface ICSoftwareComponent : NSObject {
-}
-	-(NSString *) crc;
-	-(NSString *) name;
-	-(NSUInteger) type;
-	-(NSString *) version;
-	-(void) setVersion:(NSString *)p0;
-	-(id) init;
+@protocol ICTmsInformation
+	@optional @property (nonatomic, retain) NSMutableString * TmsIP;
+	@optional @property (nonatomic, retain) NSMutableString * TmsPort;
+	@optional @property (nonatomic, retain) NSMutableString * TmsIdentifier;
+	@optional @property (nonatomic, retain) NSMutableArray * TmsArraySSLProfile;
+	@optional @property (nonatomic, retain) NSMutableString * TmsCurrentSSLProfile;
 @end
 
-@interface ICSPP : ICISMPDeviceExtension {
-}
-	-(NSObject *) delegate;
-	-(void) setDelegate:(NSObject *)p0;
-	-(id) init;
+@protocol IVALAmount
+	@optional @property (nonatomic, retain, readonly) NSString * currency;
+	@optional @property (nonatomic, assign, readonly) unsigned int amountInISK;
+	@optional @property (nonatomic, assign, readonly) unsigned int amountInCents;
 @end
 
-@interface ICSSLParameters : NSObject {
-}
-	-(BOOL) isSSL;
-	-(void) setIsSSL:(BOOL)p0;
-	-(NSMutableString *) sslCertificateName;
-	-(void) setSslCertificateName:(NSMutableString *)p0;
-	-(NSMutableString *) sslCertificatePassword;
-	-(void) setSslCertificatePassword:(NSMutableString *)p0;
-	-(id) init;
+@protocol IVALCard
+	@optional @property (nonatomic, retain, readonly) NSString * cardNumberShort;
+	@optional @property (nonatomic, retain, readonly) NSString * cardType;
 @end
 
-@interface ICTerminal : NSObject {
-}
-	-(BOOL) isBluetooth;
-	-(void) setIsBluetooth:(BOOL)p0;
-	-(NSMutableString *) terminalIPAddress;
-	-(void) setTerminalIPAddress:(NSMutableString *)p0;
-	-(NSMutableString *) terminalMacAddress;
-	-(void) setTerminalMacAddress:(NSMutableString *)p0;
-	-(NSMutableString *) terminalName;
-	-(void) setTerminalName:(NSMutableString *)p0;
-	-(id) init;
-@end
-
-@interface ICTmsInformation : NSObject {
-}
-	-(NSMutableArray *) TmsArraySSLProfile;
-	-(void) setTmsArraySSLProfile:(NSMutableArray *)p0;
-	-(NSMutableString *) TmsCurrentSSLProfile;
-	-(void) setTmsCurrentSSLProfile:(NSMutableString *)p0;
-	-(NSMutableString *) TmsIP;
-	-(void) setTmsIP:(NSMutableString *)p0;
-	-(NSMutableString *) TmsIdentifier;
-	-(void) setTmsIdentifier:(NSMutableString *)p0;
-	-(NSMutableString *) TmsPort;
-	-(void) setTmsPort:(NSMutableString *)p0;
-	-(id) init;
+@protocol IVALRequest
+	@optional @property (nonatomic, assign, readonly) unsigned int requestState;
+	@optional @property (nonatomic, assign, readonly) unsigned int requestTimeoutState;
+	@optional @property (nonatomic, retain, readonly) NSString * strRequest;
+	@optional @property (nonatomic, retain, readonly) NSString * strMsgDeliveredResponse;
+	@optional @property (nonatomic, assign, readonly) BOOL needsMsgDelivered;
+	@optional @property (nonatomic, assign, readonly) BOOL needsCheckCalculations;
+	@optional @property (nonatomic, retain, readonly) NSString * strResponse;
+	@optional @property (nonatomic, retain, readonly) id blockCompletion;
+	@optional @property (nonatomic, retain, readonly) id blockStatusMsg;
+	@optional @property (nonatomic, retain, readonly) NSString * strMessageDelivered;
+	@optional -(void) setStrResponse:(NSString *)p0;
+	@optional -(void) changeRequestStateTo:(unsigned int)p0;
+	@optional -(void) changeTimeoutStateTo:(unsigned int)p0;
+	@optional -(void) setStrMessageDeliveredResponse:(NSString *)p0;
+	@optional -(void) callCompletionBlockForRequest:(id)p0 success:(BOOL)p1 rawResponse:(NSString *)p2 msgDeliveredResponse:(NSString *)p3;
+	@optional -(BOOL) isCheckValueCorrectWithMsgType:(unsigned int)p0 transAmount:(unsigned int)p1 posCheckValue:(unsigned int)p2;
+	@optional -(void) generateNewRandomValue;
+	@optional -(void) setStrMessageDelivered;
 @end
 
 

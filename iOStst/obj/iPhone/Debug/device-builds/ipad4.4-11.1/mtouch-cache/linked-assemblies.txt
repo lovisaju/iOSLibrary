@@ -2,5 +2,5 @@
 /Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/mscorlib.dll
 /Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Xamarin.iOS.dll
 /Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Man.dll
-/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Plugin1.dll
-/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Plugin2.dll
+/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/bin/iPhone/Debug/device-builds/ipad4.4-11.1/iOStst.app:/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/ValitorBinding.dll

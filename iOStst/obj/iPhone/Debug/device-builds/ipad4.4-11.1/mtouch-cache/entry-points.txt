@@ -6,32 +6,4 @@ Function=UIApplicationMain
 	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Xamarin.iOS.dll
 Function=xamarin_get_block_descriptor
 	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/Xamarin.iOS.dll
-ObjectiveCClass=OBJC_CLASS_$_iBPBitmapContext
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICAdministration
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICBarCodeReader
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICISMPDevice
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICISMPDeviceExtension
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICNetwork
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICPclService
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICPPP
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICPrinter
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICSoftwareComponent
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICSPP
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICSSLParameters
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICTerminal
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
-ObjectiveCClass=OBJC_CLASS_$_ICTmsInformation
-	/Users/lovisa/Desktop/GIT/iOSLibrary/iOStst/obj/iPhone/Debug/device-builds/ipad4.4-11.1/mtouch-cache/Link/PayExBinding.dll
 Function=mono_pmip

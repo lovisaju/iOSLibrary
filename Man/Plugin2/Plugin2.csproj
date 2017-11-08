@@ -45,9 +45,6 @@
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
     <Reference Include="ValitorBinding">
-      <HintPath>..\..\..\Desktop\GIT\pay-engine\Engine\Plugins\Valitor\ValitorBinding\bin\Debug\ValitorBinding.dll</HintPath>
-    </Reference>
-    <Reference Include="ValitorBinding">
       <HintPath>..\..\..\pay-engine\Engine\Plugins\Valitor\ValitorBinding\bin\Debug\ValitorBinding.dll</HintPath>
     </Reference>
   </ItemGroup>

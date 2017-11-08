@@ -4,8 +4,8 @@ extern void *mono_aot_module_iOStst_info;
 extern void *mono_aot_module_mscorlib_info;
 extern void *mono_aot_module_Xamarin_iOS_info;
 extern void *mono_aot_module_Man_info;
-extern void *mono_aot_module_Plugin1_info;
-extern void *mono_aot_module_PayExBinding_info;
+extern void *mono_aot_module_Plugin2_info;
+extern void *mono_aot_module_ValitorBinding_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -13,15 +13,15 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_mscorlib_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_iOS_info);
 	mono_aot_register_module (mono_aot_module_Man_info);
-	mono_aot_register_module (mono_aot_module_Plugin1_info);
-	mono_aot_register_module (mono_aot_module_PayExBinding_info);
+	mono_aot_register_module (mono_aot_module_Plugin2_info);
+	mono_aot_register_module (mono_aot_module_ValitorBinding_info);
 
 }
 
 void xamarin_register_assemblies_impl ()
 {
 	guint32 exception_gchandle = 0;
-	xamarin_open_and_register ("PayExBinding.dll", &exception_gchandle);
+	xamarin_open_and_register ("ValitorBinding.dll", &exception_gchandle);
 	xamarin_process_managed_exception_gchandle (exception_gchandle);
 
 }

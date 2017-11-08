@@ -10,7 +10,7 @@
 		</data>
 		<key>LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		+rW6IdYb+pchKuZlXFwJAv55C64=
+		OwmwO/vYjJthksebJNAgK2fNrho=
 		</data>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		qsrHEu8lNgBPnjJwBP+jarFBRrU=
+		Dm8lOoHLZkhkKKLc8ZJL5o+21Sg=
 		</data>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		zEo8rxnpwsPoHATgf4ic8jAJvAA=
+		Kwwbmrg95Mf1DlHz3GXQ1HMkyes=
 		</data>
 		<key>Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,7 +30,19 @@
 		</data>
 		<key>Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		CP4vyHYxvxbwaEMEcaGjZpuV/Nc=
+		wJ4RSDl4YHabVg9e5GluHlY0HDQ=
+		</data>
+		<key>Man.aotdata.arm64</key>
+		<data>
+		sKDusq5be/MkbBJ1VotFg5ph9vE=
+		</data>
+		<key>Man.dll</key>
+		<data>
+		L5/7U1iYMpl16PjaBe4QJ5FN5Pg=
+		</data>
+		<key>Man.pdb</key>
+		<data>
+		yBzkqEaxpZUDDw4qPV7i9BZMarw=
 		</data>
 		<key>MonoTouchDebugConfiguration.txt</key>
 		<data>
@@ -40,9 +52,33 @@
 		<data>
 		udRFZiUn5Wu+JuryWRjPAicxwsE=
 		</data>
+		<key>PayExBinding.aotdata.arm64</key>
+		<data>
+		3IwmB36uGftS6V2EHPd40NljNOA=
+		</data>
+		<key>PayExBinding.dll</key>
+		<data>
+		dSYGONw9ChYA7uVMdnkTo2q+PuQ=
+		</data>
+		<key>PayExBinding.pdb</key>
+		<data>
+		2k1UzEplJaVL2vkxnJ0nM0lcDuQ=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>Plugin1.aotdata.arm64</key>
+		<data>
+		DTqsNASTn85ytVOG7ilBQ1x55Qw=
+		</data>
+		<key>Plugin1.dll</key>
+		<data>
+		VtEh+FyOAMhQH2PNL1qYz+Ydea0=
+		</data>
+		<key>Plugin1.pdb</key>
+		<data>
+		yZMy4vPulXifN+BvR218QdB+1V4=
 		</data>
 		<key>Settings.bundle/Root.plist</key>
 		<data>
@@ -50,15 +86,15 @@
 		</data>
 		<key>Xamarin.iOS.aotdata.arm64</key>
 		<data>
-		truMCJd1i63I+fWw9BnfuSJMts4=
+		gLe0UbQV+jRJt1ptCVmy3kqfNwA=
 		</data>
 		<key>Xamarin.iOS.dll</key>
 		<data>
-		Cv1RkQ4zWxWFnvP6Q6bLHnrzJuI=
+		Efg8EzVXXL6hfkfEPgqOyau4Omk=
 		</data>
 		<key>Xamarin.iOS.dll.mdb</key>
 		<data>
-		/7DW1ErQuuwesURGfj8uyQ2PYXI=
+		2stua9Z4kZSgl2hxiGrDJBWAsz8=
 		</data>
 		<key>archived-expanded-entitlements.xcent</key>
 		<data>
@@ -70,47 +106,59 @@
 		</data>
 		<key>iOStst.aotdata.arm64</key>
 		<data>
-		DuJfRyA9OFd4PyZeiE06ECLjvqQ=
+		l37Uw69aSJxf/nwAt6f9qhrFJVg=
 		</data>
 		<key>iOStst.exe</key>
 		<data>
-		e3Dl4ndaj0poISRP2K3KZl73oSE=
+		Lopg6oGL9/sOZriWfGzZW3iHdUc=
 		</data>
 		<key>iOStst.pdb</key>
 		<data>
-		OEtEkGxqq3r166jxZMV2b8FTsjc=
+		RHxz9++6zpx7bEJ93G1n3mXMqE0=
+		</data>
+		<key>libMan.dll.dylib</key>
+		<data>
+		GwY71a9unjK9oBHv3R7NPLBv/Mw=
+		</data>
+		<key>libPayExBinding.dll.dylib</key>
+		<data>
+		9pSDWrFyiiLQ9ChNV3EB//5SgNg=
+		</data>
+		<key>libPlugin1.dll.dylib</key>
+		<data>
+		jhxFqHbMT9TuiroTmgOYhhjOxwM=
 		</data>
 		<key>libXamarin.iOS.dll.dylib</key>
 		<data>
-		tMBTkGxMEOPjVy8ajSDTJggCNWo=
+		MAMsN2Ve7IF7o5TtmOzv210X6LA=
 		</data>
 		<key>libiOStst.exe.dylib</key>
 		<data>
-		39wL6hkhiAb1Qq9yx6xOnbrWLuI=
+		c2DfBoAJAxvWmt6qgltC2s/p840=
 		</data>
 		<key>libmonosgen-2.0.dylib</key>
 		<data>
-		TGbYaXqRNJ3gC5caMyinoihE9Js=
+		g8i/RP2j3GFwrP+HLO7hY6bMN4w=
 		</data>
 		<key>libmscorlib.dll.dylib</key>
 		<data>
-		mzU5vjBf1o2Xp+ynPHcD34PhxCk=
+		cqR0DOa6GeSUtspXxswDpt23Aa4=
 		</data>
 		<key>libxamarin-debug.dylib</key>
 		<data>
-		W0sgfNpwiLjfvxiBwuUNbNf1vSU=
+		8PcVrnVnfFjQ1pHOjX8zC+VOyKI=
 		</data>
 		<key>mscorlib.aotdata.arm64</key>
 		<data>
-		7NtRrUREAXa8HOYHohIk9yPd+kE=
+		hUoFLl9cI0uVuSQ1s2zpGbymuS0=
 		</data>
 		<key>mscorlib.dll</key>
 		<data>
-		7qCGwF/Q9duzHHzdq0LYpBGeh38=
+		7GT2CNiVbXwZdDthuTvQmuA4J/E=
 		</data>
 		<key>mscorlib.pdb</key>
 		<data>
-		RVy1IY5+5KlQw8IGXTIJco2ToMA=
+		RL2hwitnJTFgOP3nodwL4lSpH6M=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -119,11 +167,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+rW6IdYb+pchKuZlXFwJAv55C64=
+			OwmwO/vYjJthksebJNAgK2fNrho=
 			</data>
 			<key>hash2</key>
 			<data>
-			L/Qpz96oq3Dv082bUdPxKx2xJTbb8chm1f/AMEzHQJg=
+			DzQLndAsT4R79BmNxf1D7TvaST+OSzJXxURF6QVEEuI=
 			</data>
 		</dict>
 		<key>LaunchScreen.storyboardc/Info.plist</key>
@@ -141,22 +189,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qsrHEu8lNgBPnjJwBP+jarFBRrU=
+			Dm8lOoHLZkhkKKLc8ZJL5o+21Sg=
 			</data>
 			<key>hash2</key>
 			<data>
-			iSxiybA6KxVdTR38VriKMM65toOM2O3L0a7DQr6knao=
+			XhmQA3uZ0d2bbzAFdi5hEHLCoePrazqZ+KEm+dUHQ+8=
 			</data>
 		</dict>
 		<key>Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zEo8rxnpwsPoHATgf4ic8jAJvAA=
+			Kwwbmrg95Mf1DlHz3GXQ1HMkyes=
 			</data>
 			<key>hash2</key>
 			<data>
-			j4UFiePlF2bSe8874hiXQbU/87so2NndF9V81C2QSgg=
+			Io7B71Yv555jomB9PA4kX+yyvRnEO5ySyvtp1fdvWIE=
 			</data>
 		</dict>
 		<key>Main.storyboardc/Info.plist</key>
@@ -174,11 +222,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CP4vyHYxvxbwaEMEcaGjZpuV/Nc=
+			wJ4RSDl4YHabVg9e5GluHlY0HDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/sldlPSRxX827n+xFOHqe0EjcmV6EGnebpPyoGjNKOc=
+			UJGgb7toHJfM8HeF27YEJrNSaefNYW5MC+OIfP6K4Kg=
+			</data>
+		</dict>
+		<key>Man.aotdata.arm64</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sKDusq5be/MkbBJ1VotFg5ph9vE=
+			</data>
+			<key>hash2</key>
+			<data>
+			pD94LOwZ73LJHOBi8Ct5S0XG/wNPV0MLVNJa1kYksl0=
+			</data>
+		</dict>
+		<key>Man.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			L5/7U1iYMpl16PjaBe4QJ5FN5Pg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Mt2uJVRtz0VC6dElG64gb4oHY5nJNmvUGkI1iXqQ2G0=
+			</data>
+		</dict>
+		<key>Man.pdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yBzkqEaxpZUDDw4qPV7i9BZMarw=
+			</data>
+			<key>hash2</key>
+			<data>
+			MOP+VTEX+Zws+ids9e/KNDyuwUq91lz43qjDlw1i61Y=
 			</data>
 		</dict>
 		<key>MonoTouchDebugConfiguration.txt</key>
@@ -203,6 +284,72 @@
 			nkgVUZuRsO9OlyNwOSm9bZF3RQf4FNSxuD8x2FY7Fag=
 			</data>
 		</dict>
+		<key>PayExBinding.aotdata.arm64</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3IwmB36uGftS6V2EHPd40NljNOA=
+			</data>
+			<key>hash2</key>
+			<data>
+			0zxA2b3/F/Dh/OK04NfXEATFmefAEvqRMR2dZHV1pBI=
+			</data>
+		</dict>
+		<key>PayExBinding.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dSYGONw9ChYA7uVMdnkTo2q+PuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			8BGBDvsK2poAbKz+gNMzRx2AqM7teCnYlPI0Fl2cSAg=
+			</data>
+		</dict>
+		<key>PayExBinding.pdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2k1UzEplJaVL2vkxnJ0nM0lcDuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			nb4Sbo+gIxJPP7YmsWBzEC/5Ru7tCgTNxwxjCyUrdM4=
+			</data>
+		</dict>
+		<key>Plugin1.aotdata.arm64</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DTqsNASTn85ytVOG7ilBQ1x55Qw=
+			</data>
+			<key>hash2</key>
+			<data>
+			4JdF+37owblnN4Qs6Q8ncqevABXrmzh3ti+HaYB1uNI=
+			</data>
+		</dict>
+		<key>Plugin1.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VtEh+FyOAMhQH2PNL1qYz+Ydea0=
+			</data>
+			<key>hash2</key>
+			<data>
+			PbVlw468dO58RdYkw+QGYz0S3f3ZzS62uBP2sjymlOI=
+			</data>
+		</dict>
+		<key>Plugin1.pdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yZMy4vPulXifN+BvR218QdB+1V4=
+			</data>
+			<key>hash2</key>
+			<data>
+			u2kM/psxr4dAhQHChH7ST4xWIh3yXtbJxOKA7V5z768=
+			</data>
+		</dict>
 		<key>Settings.bundle/Root.plist</key>
 		<dict>
 			<key>hash</key>
@@ -218,33 +365,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			truMCJd1i63I+fWw9BnfuSJMts4=
+			gLe0UbQV+jRJt1ptCVmy3kqfNwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WO5Wrvr81dBVD6VSDBo7bRrbB0nhr+i2MmnT0eSKVQI=
+			0z6AI/t4yWfCWXrjqiaz0xB8KayK63z7rgCuRO/Og3w=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Cv1RkQ4zWxWFnvP6Q6bLHnrzJuI=
+			Efg8EzVXXL6hfkfEPgqOyau4Omk=
 			</data>
 			<key>hash2</key>
 			<data>
-			isCGNCCdm34avLRQz7ITgJjn27v6rIjiFd5qWPK8u3A=
+			Fmj89H6OADjwtWSWlh/R/3wrJ0U2Rv6EOIeB2htUTu0=
 			</data>
 		</dict>
 		<key>Xamarin.iOS.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/7DW1ErQuuwesURGfj8uyQ2PYXI=
+			2stua9Z4kZSgl2hxiGrDJBWAsz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			CJjJvVvO9aYF6vTDgh5xm0mRYhjtnR1v8lFtMV6ebWk=
+			K4S4b6NHvjioippgpN/6AunTbzytlfNDKureQmjIVYU=
 			</data>
 		</dict>
 		<key>archived-expanded-entitlements.xcent</key>
@@ -273,121 +420,154 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DuJfRyA9OFd4PyZeiE06ECLjvqQ=
+			l37Uw69aSJxf/nwAt6f9qhrFJVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			pQUUJ0up6weAFa7yJJMRLy4eDw1FDSvWvCK/v22qRC8=
+			D4Vqt4e2S4sQvOM9uAkcclNO/roU3FlagFaRz5fDlwU=
 			</data>
 		</dict>
 		<key>iOStst.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e3Dl4ndaj0poISRP2K3KZl73oSE=
+			Lopg6oGL9/sOZriWfGzZW3iHdUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			WrZfUQUrmPDPflRNF8+dwn+XHGLsDtc8jXAp1UJA38w=
+			7B5DPjBma15qxDfnnxsdSHzTMZZmI/y3P9k6q2Alubk=
 			</data>
 		</dict>
 		<key>iOStst.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OEtEkGxqq3r166jxZMV2b8FTsjc=
+			RHxz9++6zpx7bEJ93G1n3mXMqE0=
 			</data>
 			<key>hash2</key>
 			<data>
-			MtccXXs5ac7Rp1W3Mp5GENSiUtPCm1krMMDpf0wsI2g=
+			pztgc/ku8OVMzzcrL5+q3SK3XDpJnwRDnnOQbY2Yhic=
+			</data>
+		</dict>
+		<key>libMan.dll.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GwY71a9unjK9oBHv3R7NPLBv/Mw=
+			</data>
+			<key>hash2</key>
+			<data>
+			QhsjZA6XucsMN7+lgO2vfBCU9fvM5xKpD/QKW3ALYmM=
+			</data>
+		</dict>
+		<key>libPayExBinding.dll.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9pSDWrFyiiLQ9ChNV3EB//5SgNg=
+			</data>
+			<key>hash2</key>
+			<data>
+			EBrvgwusSCMcjSQxOAFbqLWXd6nJJl+7mw7Rt3o/TYc=
+			</data>
+		</dict>
+		<key>libPlugin1.dll.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jhxFqHbMT9TuiroTmgOYhhjOxwM=
+			</data>
+			<key>hash2</key>
+			<data>
+			w2qlzKPyYHH5seLos3+TwhQsR/QsMMNcf5atJfKk7vY=
 			</data>
 		</dict>
 		<key>libXamarin.iOS.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tMBTkGxMEOPjVy8ajSDTJggCNWo=
+			MAMsN2Ve7IF7o5TtmOzv210X6LA=
 			</data>
 			<key>hash2</key>
 			<data>
-			acp9H4Gwn4c+Pvfe0G+wFn/iL/mopgcyDw8RHAmzM/Y=
+			/kBbRst+C9u7uof3RX56ukkBeFiwyScduvbDxbA7Jk8=
 			</data>
 		</dict>
 		<key>libiOStst.exe.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			39wL6hkhiAb1Qq9yx6xOnbrWLuI=
+			c2DfBoAJAxvWmt6qgltC2s/p840=
 			</data>
 			<key>hash2</key>
 			<data>
-			CYBk+HoJWOInlB9EiK5pZ0lKa8iFU3jEsJxaDKUXxek=
+			ptnZE3JLCZGLwW7BqZ9l9Olsb93p2GdDxmo2XgspjEk=
 			</data>
 		</dict>
 		<key>libmonosgen-2.0.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TGbYaXqRNJ3gC5caMyinoihE9Js=
+			g8i/RP2j3GFwrP+HLO7hY6bMN4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			f4UktCDlFSH2MKHdt8VCcfwBdOzV2wmLuuSrWAobHYg=
+			rLgdW15kEtijH04OKEfZWgV1FvNHcEj06EdNhqLn6Ss=
 			</data>
 		</dict>
 		<key>libmscorlib.dll.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mzU5vjBf1o2Xp+ynPHcD34PhxCk=
+			cqR0DOa6GeSUtspXxswDpt23Aa4=
 			</data>
 			<key>hash2</key>
 			<data>
-			vB+63g79MHY/mjxclQdfeaWZmg4hkDc1ojOigyxn50I=
+			tIoGQ/RMW9hy3h5XtdAFMqzw6LIUXmmv37GSgUYmhJ4=
 			</data>
 		</dict>
 		<key>libxamarin-debug.dylib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W0sgfNpwiLjfvxiBwuUNbNf1vSU=
+			8PcVrnVnfFjQ1pHOjX8zC+VOyKI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3S/o0VCSVFzkeUmyWRMbszIAIxW3LPGZgbaFW/WsO3I=
+			I3M4WYI3z7FIrzLObD86B58LKiBIe6BipLuQC5JWlQI=
 			</data>
 		</dict>
 		<key>mscorlib.aotdata.arm64</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7NtRrUREAXa8HOYHohIk9yPd+kE=
+			hUoFLl9cI0uVuSQ1s2zpGbymuS0=
 			</data>
 			<key>hash2</key>
 			<data>
-			aSvyXFAzWH4phXZ5LB0VYn0BIASM2mwtW85luCdXF/w=
+			DyYiQve73RcYl6dC0eiuRHHVq0mnwLKOqQIldA78aBw=
 			</data>
 		</dict>
 		<key>mscorlib.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7qCGwF/Q9duzHHzdq0LYpBGeh38=
+			7GT2CNiVbXwZdDthuTvQmuA4J/E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ex1IE794indiV2KtFdto03nljSd8tK/QTZ0wgDEtBMw=
+			vr0piPCPPA3BWtLSxBYlDbI27wx9KoBm/J0hVEHRyUs=
 			</data>
 		</dict>
 		<key>mscorlib.pdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RVy1IY5+5KlQw8IGXTIJco2ToMA=
+			RL2hwitnJTFgOP3nodwL4lSpH6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Q3xRFIPjVQXNPnSuabJr8PF8KkGY27qY0x0xNhqmCU=
+			Cvum5nxi559vjSK9fwdRgtJgyJgHmZQR9fNRlCt/oVE=
 			</data>
 		</dict>
 	</dict>

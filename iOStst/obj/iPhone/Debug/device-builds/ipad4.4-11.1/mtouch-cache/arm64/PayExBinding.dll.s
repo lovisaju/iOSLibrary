@@ -52556,7 +52556,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "17DCE71D-D779-4157-9163-4F3E9D948431"
+	.asciz "B8F45312-7E59-4FD9-883B-44EE3AC5646B"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -52639,7 +52639,7 @@ _mono_aot_file_info:
 	.long 752,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 157,200,80,238,57,8,234,53,132,156,195,113,132,62,85,49
+	.byte 124,137,193,4,0,186,139,121,153,75,235,42,246,254,129,99
 	.globl _mono_aot_module_PayExBinding_info
 	.align 3
 _mono_aot_module_PayExBinding_info:

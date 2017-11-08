@@ -12,7 +12,7 @@ namespace iOStst
         {
             // Note: this .ctor should not contain any initialization logic.
 
-            this.engineService = new EngineService(new Plugins.Plug1.PluginBundle1());
+            this.engineService = new EngineService(new Plugins.Plug2.PluginBundle2());
 
             var result = this.engineService.Purchase("purchase");
         }

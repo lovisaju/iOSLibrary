@@ -730,13 +730,13 @@ exception_handling:;
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x35E04);
+		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x36904);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 @end
 
@@ -778,13 +778,13 @@ exception_handling:;
 	-(void) xamarinApplySelector
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x36104);
+		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x36C04);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 @end
 
@@ -864,7 +864,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 
 	-(id) init
@@ -920,7 +920,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 @end
 
@@ -952,7 +952,7 @@ exception_handling:;
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 @end
 
@@ -962,7 +962,7 @@ exception_handling:;
 	-(void) target
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2E404);
+		native_to_managed_trampoline_1 (self, _cmd, &managed_method, 0x2E604);
 	}
 @end
 
@@ -972,7 +972,7 @@ exception_handling:;
 	-(void) target:(UIGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x2E504);
+		native_to_managed_trampoline_8 (self, _cmd, &managed_method, p0, 0x2E704);
 	}
 @end
 
@@ -1015,20 +1015,20 @@ exception_handling:;
 	+(void) drain:(NSObject *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, 0x3AB04);
+		native_to_managed_trampoline_9 (self, _cmd, &managed_method, p0, 0x3B604);
 	}
 
 	-(BOOL) conformsToProtocol:(void *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38304);
+		return native_to_managed_trampoline_2 (self, _cmd, &managed_method, p0, 0x38E04);
 	}
 
 	-(id) init
 	{
 		static MonoMethod *managed_method = NULL;
 		bool call_super = false;
-		id rv = native_to_managed_trampoline_7 (self, _cmd, &managed_method, &call_super, 0x3A904);
+		id rv = native_to_managed_trampoline_7 (self, _cmd, &managed_method, &call_super, 0x3B404);
 		if (call_super && rv) {
 			struct objc_super super = {  rv, [NSObject class] };
 			rv = ((id (*)(objc_super*, SEL)) objc_msgSendSuper) (&super, @selector (init));
@@ -1048,7 +1048,7 @@ exception_handling:;
 	-(void) target:(UILongPressGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, 0x3E704);
+		native_to_managed_trampoline_10 (self, _cmd, &managed_method, p0, 0x3F304);
 	}
 @end
 
@@ -1063,7 +1063,7 @@ exception_handling:;
 	-(void) target:(UIPanGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, 0x41904);
+		native_to_managed_trampoline_11 (self, _cmd, &managed_method, p0, 0x42504);
 	}
 @end
 
@@ -1078,7 +1078,7 @@ exception_handling:;
 	-(void) target:(UIPinchGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, 0x42704);
+		native_to_managed_trampoline_12 (self, _cmd, &managed_method, p0, 0x43304);
 	}
 @end
 
@@ -1093,7 +1093,7 @@ exception_handling:;
 	-(void) target:(UIRotationGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x48A04);
+		native_to_managed_trampoline_13 (self, _cmd, &managed_method, p0, 0x49904);
 	}
 @end
 
@@ -1108,7 +1108,7 @@ exception_handling:;
 	-(void) target:(UITapGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, 0x48E04);
+		native_to_managed_trampoline_14 (self, _cmd, &managed_method, p0, 0x49D04);
 	}
 @end
 
@@ -1123,7 +1123,7 @@ exception_handling:;
 	-(void) target:(UISwipeGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, 0x49204);
+		native_to_managed_trampoline_15 (self, _cmd, &managed_method, p0, 0x4A104);
 	}
 @end
 
@@ -1138,9 +1138,11 @@ exception_handling:;
 	-(void) target:(UIScreenEdgePanGestureRecognizer *)p0
 	{
 		static MonoMethod *managed_method = NULL;
-		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x49604);
+		native_to_managed_trampoline_16 (self, _cmd, &managed_method, p0, 0x4A504);
 	}
 @end
+
+
 
 
 
@@ -1166,10 +1168,10 @@ exception_handling:;
 
 
 	static MTClassMap __xamarin_class_map [] = {
-		{ NULL, 0x8804 /* 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */ },
-		{ NULL, 0xC704 /* 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */ },
-		{ NULL, 0xCA04 /* 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */ },
-		{ NULL, 0xC904 /* 'UIView' => 'UIKit.UIView, Xamarin.iOS' */ },
+		{ NULL, 0x8C04 /* 'NSObject' => 'Foundation.NSObject, Xamarin.iOS' */ },
+		{ NULL, 0xCB04 /* 'UIResponder' => 'UIKit.UIResponder, Xamarin.iOS' */ },
+		{ NULL, 0xCE04 /* 'UIViewController' => 'UIKit.UIViewController, Xamarin.iOS' */ },
+		{ NULL, 0xCD04 /* 'UIView' => 'UIKit.UIView, Xamarin.iOS' */ },
 		{ NULL, 0x604 /* 'WKWebView' => 'WebKit.WKWebView, Xamarin.iOS' */ },
 		{ NULL, 0x5304 /* 'UIFocusAnimationCoordinator' => 'UIKit.UIFocusAnimationCoordinator, Xamarin.iOS' */ },
 		{ NULL, 0x5A04 /* 'UIFocusUpdateContext' => 'UIKit.UIFocusUpdateContext, Xamarin.iOS' */ },
@@ -1178,74 +1180,60 @@ exception_handling:;
 		{ NULL, 0x6104 /* 'NSArray' => 'Foundation.NSArray, Xamarin.iOS' */ },
 		{ NULL, 0x6504 /* 'NSCoder' => 'Foundation.NSCoder, Xamarin.iOS' */ },
 		{ NULL, 0x6C04 /* 'NSDate' => 'Foundation.NSDate, Xamarin.iOS' */ },
-		{ NULL, 0x7604 /* 'NSStream' => 'Foundation.NSStream, Xamarin.iOS' */ },
+		{ NULL, 0x7A04 /* 'NSStream' => 'Foundation.NSStream, Xamarin.iOS' */ },
 		{ NULL, 0x6F04 /* 'NSInputStream' => 'Foundation.NSInputStream, Xamarin.iOS' */ },
-		{ NULL, 0x7104 /* 'NSMutableArray' => 'Foundation.NSMutableArray, Xamarin.iOS' */ },
-		{ NULL, 0x7204 /* 'NSProxy' => 'Foundation.NSProxy, Xamarin.iOS' */ },
-		{ NULL, 0x7304 /* 'NSRunLoop' => 'Foundation.NSRunLoop, Xamarin.iOS' */ },
-		{ NULL, 0x7404 /* 'UIImage' => 'UIKit.UIImage, Xamarin.iOS' */ },
-		{ NULL, 0x7704 /* 'NSString' => 'Foundation.NSString, Xamarin.iOS' */ },
-		{ NULL, 0x7504 /* 'NSMutableString' => 'Foundation.NSMutableString, Xamarin.iOS' */ },
-		{ NULL, 0x7804 /* 'NSOutputStream' => 'Foundation.NSOutputStream, Xamarin.iOS' */ },
-		{ NULL, 0x7904 /* 'NSURL' => 'Foundation.NSUrl, Xamarin.iOS' */ },
-		{ NULL, 0x7A04 /* 'NSItemProvider' => 'Foundation.NSItemProvider, Xamarin.iOS' */ },
-		{ NULL, 0x8104 /* '__MonoMac_NSActionDispatcher' => 'Foundation.NSActionDispatcher, Xamarin.iOS' */ },
-		{ NULL, 0x8204 /* '__MonoMac_NSAsyncActionDispatcher' => 'Foundation.NSAsyncActionDispatcher, Xamarin.iOS' */ },
-		{ NULL, 0x8304 /* 'NSAutoreleasePool' => 'Foundation.NSAutoreleasePool, Xamarin.iOS' */ },
-		{ NULL, 0x8404 /* 'NSError' => 'Foundation.NSError, Xamarin.iOS' */ },
-		{ NULL, 0x8B04 /* 'NSProgress' => 'Foundation.NSProgress, Xamarin.iOS' */ },
-		{ NULL, 0x9304 /* 'UILocalNotification' => 'UIKit.UILocalNotification, Xamarin.iOS' */ },
-		{ NULL, 0x9604 /* 'CALayer' => 'CoreAnimation.CALayer, Xamarin.iOS' */ },
-		{ NULL, 0x9B04 /* 'CKShareMetadata' => 'CloudKit.CKShareMetadata, Xamarin.iOS' */ },
-		{ NULL, 0x9E04 /* 'UIPasteConfiguration' => 'UIKit.UIPasteConfiguration, Xamarin.iOS' */ },
-		{ NULL, 0xA404 /* 'UIApplication' => 'UIKit.UIApplication, Xamarin.iOS' */ },
-		{ NULL, 0xA504 /* 'UIBezierPath' => 'UIKit.UIBezierPath, Xamarin.iOS' */ },
-		{ NULL, 0xAC04 /* 'UIDevice' => 'UIKit.UIDevice, Xamarin.iOS' */ },
-		{ NULL, 0xC604 /* 'UITraitCollection' => 'UIKit.UITraitCollection, Xamarin.iOS' */ },
-		{ NULL, 0xD004 /* 'UIWindow' => 'UIKit.UIWindow, Xamarin.iOS' */ },
-		{ NULL, 0xD704 /* 'NSException' => 'Foundation.NSException, Xamarin.iOS' */ },
-		{ NULL, 0xDC04 /* 'INIntent' => 'Intents.INIntent, Xamarin.iOS' */ },
-		{ NULL, 0xDD04 /* 'INIntentResponse' => 'Intents.INIntentResponse, Xamarin.iOS' */ },
-		{ NULL, 0xE004 /* 'NSNull' => 'Foundation.NSNull, Xamarin.iOS' */ },
-		{ NULL, 0xEC04 /* 'UIUserNotificationSettings' => 'UIKit.UIUserNotificationSettings, Xamarin.iOS' */ },
-		{ NULL, 0xFF04 /* 'UIApplicationShortcutItem' => 'UIKit.UIApplicationShortcutItem, Xamarin.iOS' */ },
+		{ NULL, 0x7404 /* 'NSMutableArray' => 'Foundation.NSMutableArray, Xamarin.iOS' */ },
+		{ NULL, 0x7604 /* 'NSProxy' => 'Foundation.NSProxy, Xamarin.iOS' */ },
+		{ NULL, 0x7704 /* 'NSRunLoop' => 'Foundation.NSRunLoop, Xamarin.iOS' */ },
+		{ NULL, 0x7804 /* 'UIImage' => 'UIKit.UIImage, Xamarin.iOS' */ },
+		{ NULL, 0x7B04 /* 'NSString' => 'Foundation.NSString, Xamarin.iOS' */ },
+		{ NULL, 0x7904 /* 'NSMutableString' => 'Foundation.NSMutableString, Xamarin.iOS' */ },
+		{ NULL, 0x7C04 /* 'NSOutputStream' => 'Foundation.NSOutputStream, Xamarin.iOS' */ },
+		{ NULL, 0x7D04 /* 'NSURL' => 'Foundation.NSUrl, Xamarin.iOS' */ },
+		{ NULL, 0x7E04 /* 'NSItemProvider' => 'Foundation.NSItemProvider, Xamarin.iOS' */ },
+		{ NULL, 0x8504 /* '__MonoMac_NSActionDispatcher' => 'Foundation.NSActionDispatcher, Xamarin.iOS' */ },
+		{ NULL, 0x8604 /* '__MonoMac_NSAsyncActionDispatcher' => 'Foundation.NSAsyncActionDispatcher, Xamarin.iOS' */ },
+		{ NULL, 0x8704 /* 'NSAutoreleasePool' => 'Foundation.NSAutoreleasePool, Xamarin.iOS' */ },
+		{ NULL, 0x8804 /* 'NSError' => 'Foundation.NSError, Xamarin.iOS' */ },
+		{ NULL, 0x8F04 /* 'NSProgress' => 'Foundation.NSProgress, Xamarin.iOS' */ },
+		{ NULL, 0x9704 /* 'UILocalNotification' => 'UIKit.UILocalNotification, Xamarin.iOS' */ },
+		{ NULL, 0x9A04 /* 'CALayer' => 'CoreAnimation.CALayer, Xamarin.iOS' */ },
+		{ NULL, 0x9F04 /* 'CKShareMetadata' => 'CloudKit.CKShareMetadata, Xamarin.iOS' */ },
+		{ NULL, 0xA204 /* 'UIPasteConfiguration' => 'UIKit.UIPasteConfiguration, Xamarin.iOS' */ },
+		{ NULL, 0xA804 /* 'UIApplication' => 'UIKit.UIApplication, Xamarin.iOS' */ },
+		{ NULL, 0xA904 /* 'UIBezierPath' => 'UIKit.UIBezierPath, Xamarin.iOS' */ },
+		{ NULL, 0xB004 /* 'UIDevice' => 'UIKit.UIDevice, Xamarin.iOS' */ },
+		{ NULL, 0xCA04 /* 'UITraitCollection' => 'UIKit.UITraitCollection, Xamarin.iOS' */ },
+		{ NULL, 0xD404 /* 'UIWindow' => 'UIKit.UIWindow, Xamarin.iOS' */ },
+		{ NULL, 0xDB04 /* 'NSException' => 'Foundation.NSException, Xamarin.iOS' */ },
+		{ NULL, 0xE004 /* 'INIntent' => 'Intents.INIntent, Xamarin.iOS' */ },
+		{ NULL, 0xE104 /* 'INIntentResponse' => 'Intents.INIntentResponse, Xamarin.iOS' */ },
+		{ NULL, 0xE404 /* 'NSNull' => 'Foundation.NSNull, Xamarin.iOS' */ },
+		{ NULL, 0xF004 /* 'UIUserNotificationSettings' => 'UIKit.UIUserNotificationSettings, Xamarin.iOS' */ },
+		{ NULL, 0x10304 /* 'UIApplicationShortcutItem' => 'UIKit.UIApplicationShortcutItem, Xamarin.iOS' */ },
 		{ NULL, 0x6604 /* 'UIGestureRecognizer' => 'UIKit.UIGestureRecognizer, Xamarin.iOS' */ },
 		{ NULL, 0x6A04 /* 'NSData' => 'Foundation.NSData, Xamarin.iOS' */ },
 		{ NULL, 0x6D04 /* 'NSDictionary' => 'Foundation.NSDictionary, Xamarin.iOS' */ },
-		{ NULL, 0x9404 /* 'UILongPressGestureRecognizer' => 'UIKit.UILongPressGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0x9C04 /* 'UIPanGestureRecognizer' => 'UIKit.UIPanGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0xA104 /* 'UIPinchGestureRecognizer' => 'UIKit.UIPinchGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0xB004 /* 'UIRotationGestureRecognizer' => 'UIKit.UIRotationGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0xB204 /* 'UITapGestureRecognizer' => 'UIKit.UITapGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0xB404 /* 'UISwipeGestureRecognizer' => 'UIKit.UISwipeGestureRecognizer, Xamarin.iOS' */ },
-		{ NULL, 0xB604 /* 'UIScreenEdgePanGestureRecognizer' => 'UIKit.UIScreenEdgePanGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0x9804 /* 'UILongPressGestureRecognizer' => 'UIKit.UILongPressGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xA004 /* 'UIPanGestureRecognizer' => 'UIKit.UIPanGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xA504 /* 'UIPinchGestureRecognizer' => 'UIKit.UIPinchGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xB404 /* 'UIRotationGestureRecognizer' => 'UIKit.UIRotationGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xB604 /* 'UITapGestureRecognizer' => 'UIKit.UITapGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xB804 /* 'UISwipeGestureRecognizer' => 'UIKit.UISwipeGestureRecognizer, Xamarin.iOS' */ },
+		{ NULL, 0xBA04 /* 'UIScreenEdgePanGestureRecognizer' => 'UIKit.UIScreenEdgePanGestureRecognizer, Xamarin.iOS' */ },
 		{ NULL, 0x300 /* 'AppDelegate' => 'iOStst.AppDelegate, iOStst' */ },
 		{ NULL, 0x400 /* 'ViewController' => 'iOStst.ViewController, iOStst' */ },
 		{ NULL, 0x6704 /* '__UIGestureRecognizerToken' => 'UIKit.UIGestureRecognizer+Token, Xamarin.iOS' */ },
 		{ NULL, 0x6804 /* '__UIGestureRecognizerParameterlessToken' => 'UIKit.UIGestureRecognizer+ParameterlessDispatch, Xamarin.iOS' */ },
 		{ NULL, 0x6904 /* '__UIGestureRecognizerParametrizedToken' => 'UIKit.UIGestureRecognizer+ParametrizedDispatch, Xamarin.iOS' */ },
-		{ NULL, 0x8A04 /* '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */ },
-		{ NULL, 0x9504 /* '__UILongPressGestureRecognizer' => 'UIKit.UILongPressGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0x9D04 /* '__UIPanGestureRecognizer' => 'UIKit.UIPanGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xA204 /* '__UIPinchGestureRecognizer' => 'UIKit.UIPinchGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xB104 /* '__UIRotationGestureRecognizer' => 'UIKit.UIRotationGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xB304 /* '__UITapGestureRecognizer' => 'UIKit.UITapGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xB504 /* '__UISwipeGestureRecognizer' => 'UIKit.UISwipeGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xB704 /* '__UIScreenEdgePanGestureRecognizer' => 'UIKit.UIScreenEdgePanGestureRecognizer+Callback, Xamarin.iOS' */ },
-		{ NULL, 0xB0A /* 'iBPBitmapContext' => 'PayExBinding.iBPBitmapContext, PayExBinding' */ },
-		{ NULL, 0x170A /* 'ICISMPDevice' => 'PayExBinding.ICISMPDevice, PayExBinding' */ },
-		{ NULL, 0xC0A /* 'ICAdministration' => 'PayExBinding.ICAdministration, PayExBinding' */ },
-		{ NULL, 0x130A /* 'ICBarCodeReader' => 'PayExBinding.ICBarCodeReader, PayExBinding' */ },
-		{ NULL, 0x1B0A /* 'ICISMPDeviceExtension' => 'PayExBinding.ICISMPDeviceExtension, PayExBinding' */ },
-		{ NULL, 0x1F0A /* 'ICNetwork' => 'PayExBinding.ICNetwork, PayExBinding' */ },
-		{ NULL, 0x230A /* 'ICPclService' => 'PayExBinding.ICPclService, PayExBinding' */ },
-		{ NULL, 0x270A /* 'ICPPP' => 'PayExBinding.ICPPP, PayExBinding' */ },
-		{ NULL, 0x2B0A /* 'ICPrinter' => 'PayExBinding.ICPrinter, PayExBinding' */ },
-		{ NULL, 0x2F0A /* 'ICSoftwareComponent' => 'PayExBinding.ICSoftwareComponent, PayExBinding' */ },
-		{ NULL, 0x300A /* 'ICSPP' => 'PayExBinding.ICSPP, PayExBinding' */ },
-		{ NULL, 0x310A /* 'ICSSLParameters' => 'PayExBinding.ICSSLParameters, PayExBinding' */ },
-		{ NULL, 0x320A /* 'ICTerminal' => 'PayExBinding.ICTerminal, PayExBinding' */ },
-		{ NULL, 0x330A /* 'ICTmsInformation' => 'PayExBinding.ICTmsInformation, PayExBinding' */ },
+		{ NULL, 0x8E04 /* '__NSObject_Disposer' => 'Foundation.NSObject+NSObject_Disposer, Xamarin.iOS' */ },
+		{ NULL, 0x9904 /* '__UILongPressGestureRecognizer' => 'UIKit.UILongPressGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xA104 /* '__UIPanGestureRecognizer' => 'UIKit.UIPanGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xA604 /* '__UIPinchGestureRecognizer' => 'UIKit.UIPinchGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xB504 /* '__UIRotationGestureRecognizer' => 'UIKit.UIRotationGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xB704 /* '__UITapGestureRecognizer' => 'UIKit.UITapGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xB904 /* '__UISwipeGestureRecognizer' => 'UIKit.UISwipeGestureRecognizer+Callback, Xamarin.iOS' */ },
+		{ NULL, 0xBB04 /* '__UIScreenEdgePanGestureRecognizer' => 'UIKit.UIScreenEdgePanGestureRecognizer+Callback, Xamarin.iOS' */ },
 		{ NULL, 0 },
 	};
 
@@ -1254,8 +1242,8 @@ exception_handling:;
 		"mscorlib", 
 		"Xamarin.iOS", 
 		"Man", 
-		"Plugin1", 
-		"PayExBinding"
+		"Plugin2", 
+		"ValitorBinding"
 	};
 
 	static struct MTFullTokenReference __xamarin_token_references [] = {
@@ -1266,8 +1254,8 @@ exception_handling:;
 		__xamarin_class_map,
 		__xamarin_token_references,
 		6,
-		80,
-		27,
+		66,
+		13,
 		0
 	};
 
@@ -1338,20 +1326,6 @@ void xamarin_create_classes () {
 	__xamarin_class_map [63].handle = objc_getClass ("__UITapGestureRecognizer");
 	__xamarin_class_map [64].handle = objc_getClass ("__UISwipeGestureRecognizer");
 	__xamarin_class_map [65].handle = objc_getClass ("__UIScreenEdgePanGestureRecognizer");
-	__xamarin_class_map [66].handle = [iBPBitmapContext class];
-	__xamarin_class_map [67].handle = [ICISMPDevice class];
-	__xamarin_class_map [68].handle = [ICAdministration class];
-	__xamarin_class_map [69].handle = [ICBarCodeReader class];
-	__xamarin_class_map [70].handle = [ICISMPDeviceExtension class];
-	__xamarin_class_map [71].handle = [ICNetwork class];
-	__xamarin_class_map [72].handle = [ICPclService class];
-	__xamarin_class_map [73].handle = [ICPPP class];
-	__xamarin_class_map [74].handle = [ICPrinter class];
-	__xamarin_class_map [75].handle = [ICSoftwareComponent class];
-	__xamarin_class_map [76].handle = [ICSPP class];
-	__xamarin_class_map [77].handle = [ICSSLParameters class];
-	__xamarin_class_map [78].handle = [ICTerminal class];
-	__xamarin_class_map [79].handle = [ICTmsInformation class];
 	xamarin_add_registration_map (&__xamarin_registration_map);
 }
 
